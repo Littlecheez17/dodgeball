@@ -7,15 +7,15 @@ function addDodgeball () {
         basic.pause(200)
         dodgeBall.change(LedSpriteProperty.Y, -1)
     }
-    basic.pause(10)
+    basic.pause(40)
     if (sprite.isTouching(dodgeBall)) {
         sprite.delete()
         basic.showLeds(`
-            . . . . #
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
             `)
         basic.clearScreen()
         control.reset()
